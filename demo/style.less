@@ -10,21 +10,61 @@ html, body {
   overflow-x: hidden;
 }
 
+&.darkRed {
+  background: @colorDarkRed;
+}
+
+&.darkPink {
+  background: @colorDarkPink;
+}
+
+&.green {
+  background: @colorGreen;
+}
+
+&.darkGreen {
+  background: @colorDarkGreen;
+}
+
+&.lightGreen {
+  background: @colorLightGreen;
+}
+
+&.brown {
+  background: @colorBrown;
+}
+
+&.blue {
+  background: @colorBlue;
+}
+
+&.yellow {
+  background: @colorYellow;
+}
+
 .square {
   width: 20px;
   height: 20px;
-  border : 1px #333 solid;
-  &.darkRed {
-    background : @colorDarkRed;
-  }
+  border: 1px #333 solid;
+
 }
 
 table {
+  tbody {
+    tr {
+      padding: 3px;
+      td {
+        &:first-child {
+          line-height: 30px;
+        }
+      }
+    }
+  }
   th {
     width: 200px;
     text-align: left !important;
     .exo2;
-    font-size : 20px;
+    font-size: 20px;
     padding-bottom: 12px;
 
   }
@@ -52,13 +92,13 @@ aside {
   ul {
     list-style: square;
     margin-top: 50px;
-    color : #ddd;
+    color: #ddd;
     li {
       a {
         text-decoration: none !important;
-        color : #eee;
+        color: #eee;
         .exo2;
-        font-size : 20px;
+        font-size: 20px;
         position: relative;
         top: 2px;
       }
